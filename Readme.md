@@ -10,6 +10,7 @@ git clone https://github.com/adityapatil123/Git-practice.git
 - **Add** : Stage the files for committing
 
 On Bash : 
+
 ```
 git add new-file.txt
 ```
@@ -56,8 +57,9 @@ On Bash :
 git commit --amend -m "Update the new-file replacing prev commit"
 ```
 
+- **Push** : Push to remote branch (here branch is 'master')
 
-
-
-
-
+On Bash : 
+```
+git push origin master
+```
