@@ -56,6 +56,13 @@ On Bash :
 git commit --amend -m "Update the new-file replacing prev commit"
 ```
 
+- **Push** : Push to remote branch (here branch is 'master')
+
+On Bash : 
+```
+git push origin master
+```
+
 
 
 
