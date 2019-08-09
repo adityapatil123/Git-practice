@@ -10,6 +10,7 @@ git clone https://github.com/adityapatil123/Git-practice.git
 - **Add** : Stage the files for committing
 
 On Bash : 
+
 ```
 git add new-file.txt
 ```
@@ -62,8 +63,3 @@ On Bash :
 ```
 git push origin master
 ```
-
-
-
-
-
