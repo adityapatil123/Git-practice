@@ -79,3 +79,42 @@ git stash	# Make stash
 git stash list	# Show stash-list
 git stash pop	# Return on stashed stage again 
 ```
+
+- **Move/Delete** : Move/Delete the file from one location to another
+
+On Bash : 
+```
+git mv new-file2.txt folder1/
+git rm file.txt
+```
+
+- **Revert** : Revert contents of file
+
+On Bash : 
+```
+git checkout file.txt
+```
+
+- **Remove changes** : Remove the staged files
+
+On Bash : 
+```
+git checkout HEAD -- file.txt
+```
+
+- **Move HEAD Pointer** : Move HEAD pointer to the given commit-ID. This can be soft, mixed and hard.
+1. **--soft** :Reset the HEAD pointer only without destroying anything.
+2. **--mixed** :Reverts those changes from the staging area that have not been committed yet.
+3. **--hard** :Reset the HEAD pointer with clearing staging area.
+
+On Bash : 
+```
+git reset --soft HEAD~	# Pointer to the prev commit
+```
+
+- **Tag** : Tag the commit with tag(version)
+
+On Bash : 
+```
+git tag -a 'Release_1_0' -m 'Tagged basic string operation code' HEAD
+```
