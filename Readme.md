@@ -57,9 +57,25 @@ On Bash :
 git commit --amend -m "Update the new-file replacing prev commit"
 ```
 
-- **Push** : Push to remote branch (here branch is 'master')
+- **Push** : Push to remote repo (here branch is 'master')
 
 On Bash : 
 ```
 git push origin master
+```
+
+- **Pull** : Pull remote repo (pull first, handle conflicts and then push)
+
+On Bash : 
+```
+git pull origin master
+```
+
+- **Stash** : Code which is not yet to commit and you have to work on different branch, hence for that keep in stash(draft) temporarily.
+
+On Bash : 
+```
+git stash	# Make stash
+git stash list	# Show stash-list
+git stash pop	# Return on stashed stage again 
 ```
