@@ -116,5 +116,31 @@ git reset --soft HEAD~	# Pointer to the prev commit
 
 On Bash : 
 ```
-git tag -a 'Release_1_0' -m 'Tagged basic string operation code' HEAD
+git tag -a 'Release_1_0' -m 'Tagged basic string operation code' HEAD	# Add Tag
+git tag -d Release_1_0		# Delete Tag
+```
+
+- **Branch** : Make new-branch and operations
+
+On Bash : 
+```
+git branch new_branch		# Make new branch
+git branch			# Get branches with current starting with *(asterisk)
+git checkout new_branch		# Switch to branch
+git branch -D test_branch	# Delete the branch
+git branch -m new_branch branch1	#Rename the branch
+```
+
+- **Merge/Rebase** : Merge/Rebase two branches
+
+On Bash : 
+```
+# master commits : A -> B -> C -> D
+# new_branch commits : A -> B -> X -> Y
+
+git merge origin/new_branch	# Merge contents of branch, destination will be current branch
+# Result: A -> B -> C -> D -> X -> Y	i.e.branch commit will be head
+
+git rebase origin/new_branch	# Rebase contents of branch, destination will be current branch
+# Result: A -> B -> X -> Y -> C -> D	i.e.your commit will be head
 ```
